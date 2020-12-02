@@ -1,6 +1,6 @@
 function slider()
 	{
-		var menu = document.getElementById('menu');
+		var menu = document.getElementById('dropdown');
 		if(menu.style.display === "none")
 		{
 			menu.style.display = "block";
@@ -26,3 +26,4 @@ var videoplayer = document.getElementById('VideoPlayer');
 		videoplayer.style.display="block";
 		// body.style.background = gray;
 	}
+

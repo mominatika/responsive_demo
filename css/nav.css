@@ -50,11 +50,28 @@ nav ul li a:hover{
 		font-size: 20px;
 
 }
+#dropdown{display: none,
+
+
+}
+#dropdown li a{
+			display:inline-block;
+			background-color:white;
+			width: 100%;
+			padding: 15px;
+			color:#bc599d;
+
+}
+#dropdown li a:hover{
+			color:white;
+			background-color: pink;
+
+}
 .clear{clear: both}
 @media only screen and (max-width:1180px)
 {
 	/*body{background-color: pink}*/
-
+	
 	label.logo{
 		padding-left:20px;
 		/*height: 50px;*/
@@ -65,38 +82,13 @@ nav ul li a:hover{
 	}
 	
 }
-@media only screen and (max-width: 750px)
+
+@media only screen and (max-width: 767px)
 {
 	nav ul{display: none}
 	/*body{background-color: yellow}*/
 	nav #icon{display: block;}
-	nav ul{
-		/*position: fixed;*/
-			width: 100%;
-			text-align:left;
-			transition: all 1s;
-
-	}
-	nav ul li{
-		width: 100%;
-		display: block;
-		line-height: 20px;
-
-
-	}
-	nav ul li a{
-		display: inline-block;
-		width: 100%;
-		margin-left: 50px;
-		/*border: 1px solid pink*/
-		color: white
-		background-color:pink;
-	}
-	nav ul li a:hover{
-		/*border: 1px solid pink*/
-		color: white;
-		background-color:pink;
-	}
+	
 	.slide-show{
 		padding: 10px;
 }
@@ -109,3 +101,13 @@ nav ul li a:hover{
 	
 
 }
+
+@media only screen and (min-width: 767px)
+{
+#dropdown{display: none !important}
+/*#dropdown*/
+
+}
+
+
+
