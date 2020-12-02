@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+}
+nav{
+	width: 100%;
+	/*border:1px solid red;*/
+	/*background-color: pink;*/
+	height: 100px;
+
+}
+.logo img{
+		height: 100px;
+		width:auto;
+}
+nav{position: relative;}
+nav ul{
+		float: right;
+		margin-right: 40px;
+		line-height: 90px;
+}
+nav ul li{display: inline-block;
+		/*width:150px;*/
+}
+nav ul li a{
+	/*border: 1px solid yellow;*/
+	padding: 15px;
+	color: grey;
+	/*margin: 2px;*/
+}
+nav ul li a:hover{
+	transition: .30s;
+	color: pink;
+		/*font-weight:bold;*/
+	text-transform: uppercase;
+}
+#icon{color: black;
+		float: left;
+		line-height: 90px;
+		cursor: pointer;
+		margin-right: 30px;
+		position: absolute;
+		right:0;
+		top:0;
+
+		padding: 10px;
+		display: none;
+		font-size: 20px;
+
+}
+.clear{clear: both}
+@media only screen and (max-width:1180px)
+{
+	/*body{background-color: pink}*/
+
+	label.logo{
+		padding-left:20px;
+		/*height: 50px;*/
+		/*width: auto;*/
+	}
+	.slide-show{
+		padding: 10px;
+	}
+	
+}
+@media only screen and (max-width: 750px)
+{
+	nav ul{display: none}
+	/*body{background-color: yellow}*/
+	nav #icon{display: block;}
+	nav ul{
+		/*position: fixed;*/
+			width: 100%;
+			text-align:left;
+			transition: all 1s;
+
+	}
+	nav ul li{
+		width: 100%;
+		display: block;
+		line-height: 20px;
+
+
+	}
+	nav ul li a{
+		display: inline-block;
+		width: 100%;
+		margin-left: 50px;
+		/*border: 1px solid pink*/
+		color: white
+		background-color:pink;
+	}
+	nav ul li a:hover{
+		/*border: 1px solid pink*/
+		color: white;
+		background-color:pink;
+	}
+	.slide-show{
+		padding: 10px;
+}
+	/*.slides img{
+	width:100%;
+	height: 200px;
+
+	max-width:500px;
+}*/
+	
+
+}

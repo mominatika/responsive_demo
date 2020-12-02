@@ -1,0 +1,145 @@
+.container{
+			/*display: flex;*/
+			/*width: 80%;*/
+			max-width: 1080px;
+			margin: 0 auto;
+			padding-top: 20px;
+			position: relative;
+}
+.mp4video-container{
+	margin-top:50px;
+}
+.row{
+	width: 100%;
+	display: flex;
+
+	/*justify-content*/
+
+	/*outline: 1px solid black;*/
+	/*width: 100%;*/
+}
+.col{
+	flex: 1;
+	width: 50%;
+	float: left;
+	/*flex-wrap: wrap;*/
+	/*outline: 1px solid red;*/
+}
+.paragraph{
+	/*flex:1;*/
+	/*align-items: center;*/
+
+}
+.col p{
+	text-indent: 30px;
+	padding: 10px;
+	  text-align: justify;
+}
+
+.image{
+	/*flex:1;*/
+	text-align: center;
+	/*padding: 50px 0;*/
+	/*align-items:;*/
+}
+.footer{
+		margin-top: 20px;
+		color: grey;
+		background-color: rgba(219,176,243,.5);
+		/*height: 350px;*/
+		text-align: center;
+
+
+
+}
+.footer-col h1, h3,h5{
+		text-align:center;
+		padding: 5px
+}
+.small-image{
+		position: relative;
+		/*outline: 1px solid blue;*/
+		width: 100%;
+		text-align: center;
+
+}
+.small-image img{
+		max-width: 450px;
+		padding: 10px 0px;
+
+		/*margin: 0 10px;*/
+} 
+.play-icon{
+
+	position: absolute;
+	/*font-size: 50px;*/
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+
+	/*border: 1px solid red;*/
+}
+.video-player{
+	display:none;
+	/*outline: 1px solid red;*/
+	width:100%;
+	/*padding: 100px;*/
+	background: black;
+
+	/*background-color: rgba(0 ,0, 0 ,0.1);*/
+	position: absolute;
+	/*position:  relative;*/
+	top:20px;
+
+
+	
+}
+.close-btn{
+	position: absolute;
+	/*bottom: 50%;*/
+	top: 10px;
+	right: 10px;
+	color: white;
+
+
+}
+
+.social-icon{
+			margin-top: 50px;
+}
+.twitter:hover{
+		color: #00acee; 
+
+}
+.fb:hover{
+	color:#3b5998;
+}
+.whatsapp:hover{
+	color: #1b926c;
+}
+.out{
+	/*outline: 1PX solid red;*/
+		text-align:center;
+		width: 200px;
+		margin:0 auto;
+	padding: 0 10px;
+	/*margin-left: 2px;*/
+
+}
+@media only screen and (max-width: 700px)
+{
+	 .row{
+			display: block;
+	}
+
+}
+@media only screen and (max-width: 500px)
+{
+	 .col{
+	 		float: none;
+	 		width:100%;
+
+	}
+}
+/*.follow{margin-top: 10px;}*/
+.clear{clear:both;}
