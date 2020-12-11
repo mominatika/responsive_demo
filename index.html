@@ -3,22 +3,28 @@
 <head>
 	<title>responsive</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/nav.css"> 
+	<!-- <link rel="stylesheet" type="text/css" href="css/nav.css">  -->
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<section> 
+	<div class="main-container">
+	<div class="inner-container">
 		<!-- head -->
-	<nav>
-		<label class="logo">
-		<img src="cake/header.jpg">
-			
-		</label>
-		<ul id="menu">
+
+	<header class="header">
+		<div class="logo">
+			<!-- logo -->
+				<img src="cake/header.jpg">
+		
+		</div>
+		<div class="menulist menulink">
+			<!-- <h1>menu</h1> -->
+			<ul id="menu">
 							<li><a href="#">Home</a></li>
 								<li><a href="#">About</a></li>
 								<li><a href="#">Cakes</a></li>
@@ -26,24 +32,35 @@
 								<li><a href="#">News</a></li>
 								<li><a href="#">Contact Us</a></li>
 						</ul>
-						<label id="icon">
-			<i class="fa fa-list" aria-hidden="true" onclick="slider()"></i>
+
+							<label id="navbar-icon">
+			<i class="fa fa-list" aria-hidden="true" id="nav-icon"></i>
 	</label>
+		</div>
+		
+
+		<!-- <div class="icon">
+			<i>icon</i>
+		</div> -->
+
+	</header></div>
+	<nav class="navbar">
+		<div id="dropdown">
+			<ul class="dropmenu menulink">
+							<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Cakes</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Contact Us</a></li>
+						</ul>
+
+		</div>
 
 	</nav>
-	<ul id="dropdown">
-							<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Cakes</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Contact Us</a></li>
-						</ul>
-	</section>
-	<div class="clear"></div>
-	
-	<div class="container" id="container">
-	<section>
+	<div class="container">
+	<main class="mainpart">
+			<section>
 		<!-- slider -->
 		   <div id="slider" class="vslide">
 		   	<figure>
@@ -85,18 +102,19 @@
 
 					<div class="small-image">
 						<img src="cake/c2.jpg">
-						<i class="fa fa-play-circle play-icon fa-2x" onclick="playvideo('cake/cake3.mp4')"></i>
-
+						<i class="fa fa-play-circle play-icon video-icon fa-2x" id="play-icon" onclick="playvideo('cake/cake3.mp4')"></i>
+						<i class="fa fa-pause-circle pause-icon video-icon fa-2x" id= "pause-icon" onclick="playvideo('cake/cake3.mp4')"></i>
 					</div>
 				</div>
 
 
 			</div>
-				<div class="clear"></div>
+				<!-- <div class="clear"></div> -->
 		</div>
 	</div>
 	<!-- <div class="player"> -->
-	<div class="video-player" id="VideoPlayer">
+
+		<div class="video-player" id="VideoPlayer">
 
 		<video  width="100%" height="350px" controls>
 			<source src="cake/cake3.mp4" type="video/mp4" id="CakeVideo">
@@ -106,17 +124,22 @@
 
 	</div>
 
+	
+
 </div>
 
-<div class="footer">
-<div class="row">
-	<div class="footer-col col more">
+		
+	</main>
+</div>
+	<footer class="footer">
+		<div class="footer-row">
+	<div class="footer-col  more">
 
 		<h3>FIND OUT MORE</h3>
 	<p> The Cake Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries around</p>
 
 	</div>
-	<div class="footer-col col contact">
+	<div class="footer-col  contact">
 
 	<h3>Contact Us</h3>		
 	<h5>Address</h5>
@@ -124,7 +147,7 @@
 	<h5>phone</h5>
 		<p class="out">+91-98980 88885</p>
 	</div>
-	<div class="footer-col col">
+	<div class="footer-col">
 		<h3>THE CAKE SHOP OUTLETS</h3>
 
 		<h5>JCube</h5>
@@ -137,7 +160,7 @@ Singapore 609731</span>
 <span class="out">33 Sengkang West Avenue,<br> #02-13
 Singapore 797653</span>
 	</div>
-	<div class="footer-col follow col">
+	<div class="footer-col follow">
 		<h3>FOLLOW US</h3>
 		<div class="social-icon">
 		<i class="fa fa-twitter fa-2x twitter"></i>
@@ -146,19 +169,33 @@ Singapore 797653</span>
 		<i class="fa fa-whatsapp fa-2x whatsapp" aria-hidden="true"></i>
 	</div>
 	</div>
+
+
+
+	</footer>
+	
+	
+
+
+</div>
 </div>
 
- </div>
-
-
-<!-- </div> -->
 
 </body>
 </html>
 <script type="text/javascript" src="js/res.js"></script>
 <script type="text/javascript">
 	
-	
+	$(document).ready(function(){
+
+		$('#nav-icon').click(function(){
+			$('#dropdown').toggle();
+		});
+		// $('#play-icon').click(function(){
+		// 	$(this).hide();
+		// 	$("#pause-icon").show();
+		// });
+	});
 	
 
 </script>

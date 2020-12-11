@@ -3,6 +3,7 @@
 	width: 1080;
 }
 #slider figure{
+	/*border:1px solid red;*/
 	position: relative;
 	width: 500%;
 	/*width: 1080px;*/
