@@ -91,16 +91,21 @@ header{
 }
 .row{display:grid;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 15px;
+	/*margin-top: px;*/
+	margin: 30px 0 30px 0; 
 	/*justify-content: space-between;*/
 }
 
 .paragraph h3{padding: 10px;
 				text-align: center;
+				color:#dd1f58
 }
 .paragraph p{
 			text-indent: 50px;
-			padding: 10px;
+			padding: 10px 0px 0px 0;
+			/*color:#dd1f58*/
+
+			/*border: 1PX solid red;*/
 }
 .image{
 	
@@ -110,6 +115,7 @@ header{
 
 
 .small-image{
+
 		position: relative;
 		/*outline: 1px solid blue;*/
 		width: 100%;
@@ -117,9 +123,10 @@ header{
 
 }
 .small-image img{
-		max-width: 450px;
+			height:250PX;
+		width: 500PX;
 		padding: 10px 0px;
-
+		margin-left: 31px;
 		/*margin: 0 10px;*/
 } 
 .video-icon{
@@ -162,11 +169,15 @@ video{
 
 }
 .footer-row{
+	padding: 50px 0;
+	font-size: 20px;
+	/*line-height: 20px;*/
 	/*outline: 1px solid red;*/
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
 	background-color: rgba(219,176,243,.5);
-	color: grey;
+	/*color: grey;*/
+	color:#dd1f58;
 }
 .footer-col{
 			/*border: 1px solid black;*/
@@ -176,6 +187,7 @@ video{
 .social-icon{
 			margin-top: 50px;
 }
+.follow a{color:#dd1f58}
 .twitter:hover{
 		color: #00acee; 
 
