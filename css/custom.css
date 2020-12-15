@@ -198,6 +198,17 @@ video{
 .whatsapp:hover{
 	color: #1b926c;
 }
+.footer-head h3{
+				/*border: 1px solid red;*/
+				padding-bottom: 20px;
+}
+
+.footer-head h4{
+				padding: 10px 0;
+}
+.footer-head p{
+				padding: 10px 0;
+}
 @media only screen and (max-width: 800px)
 {
 
